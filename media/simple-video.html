@@ -4,9 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Video and Audio</title>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="/mejs/mediaelement-and-player.min.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/mejs/mediaelementplayer.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
@@ -15,8 +19,27 @@
     
     <div class="wrapper">
       
+      <h2>Video Example</h2>
+      <video class="mejs__player">
+        <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.mp4" type="video/mp4">
+        <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.ogg" type="video/ogg">
+        <track label="English" kind="subtitles" srclang="en" src="bridge-captions.vtt" default>
+       </video>
       
-      
+      <h2>Audio Example</h2>
+      <audio class="mejs__player">
+        <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge-audio.mp3" type="audio/mp3">
+      </audio>
+
+      <p>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video"   target="_blank">Video element documentation</a> /
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source"  target="_blank">Source element documentation</a> /
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio"   target="_blank">Audio element documentation</a> /
+        <a href="https://quuz.org/webvtt/" target="_blank">Web VTT Validator</a> /
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track"   target="_blank">Track element documentation</a> /
+        <a href="http://www.mediaelementjs.com/" target="_blank">http://www.mediaelementjs.com/</a>
+      </p>
+
     </div>
 
   </body>
